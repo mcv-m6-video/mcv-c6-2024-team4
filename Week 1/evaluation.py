@@ -75,12 +75,12 @@ def voc_eval(preds, gt, ovthresh=0.5):
     for i, frame in enumerate(preds):
         image_ids += [i] * len(preds[i])
         confidence += list(np.random.rand(len(preds[i])))
-        BB += [[bbox[0],bbox[1],bbox[2],bbox[3]]  for bbox in preds[i]]
+        BB += [[bbox[0],bbox[1],bbox[2],bbox[3]] for bbox in preds[i]]
 
     confidence = np.array(confidence)
     BB = np.array(BB).reshape(-1, 4)
 
-    if np.all(confidence != None): # Podria haver-hi algun confidence = None?
+    if np.all(confidence != None):
         sorted_ind = np.argsort(-confidence)
         BB = BB[sorted_ind, :]
         image_ids = [image_ids[x] for x in sorted_ind]
