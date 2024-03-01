@@ -15,7 +15,7 @@ This repository serves as the collaborative workspace for Team 4 working on the 
 
 2. **Navigate to the Weekly Folder**:
     ```bash
-   cd Week_<number>
+   cd Week <number>
     ```
 
 3. **Run the code**:
