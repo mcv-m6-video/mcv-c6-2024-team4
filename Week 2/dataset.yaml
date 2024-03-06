@@ -1,0 +1,5 @@
+train: data\sequence_dataset\train.txt
+val: data\sequence_dataset\test.txt
+
+names:
+  0: 'Car'
