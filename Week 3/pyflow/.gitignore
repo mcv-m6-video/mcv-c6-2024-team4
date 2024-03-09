@@ -1,0 +1,7 @@
+build
+*.cpp
+**/*.npy
+*.so
+*.pyc
+__init__.py
+*.pyd
