@@ -4,7 +4,7 @@ import os
 import matplotlib.pyplot as plt
 
 # Code imported from https://github.com/mcv-m6-video/mcv-m6-2023-team2/blob/main/week4/metrics.py
-def MSEN(GT, pred, output_dir, verbose=False, visualize=True):
+def MSEN(GT, pred, output_dir, visualize=True):
     """
     Computes "Mean Square Error in Non-occluded areas"
     """
@@ -13,13 +13,6 @@ def MSEN(GT, pred, output_dir, verbose=False, visualize=True):
     se = np.sqrt(u_diff ** 2 + v_diff ** 2)
     sen = se[GT[:, :, 2] == 1]
     msen = np.mean(sen)
-
-    if verbose:
-        print(GT[0, -1])
-        print(pred[0, -1])
-        print(u_diff[0, -1])
-        print(v_diff[0, -1])
-        print(se[0, -1])
 
     if visualize:
         os.makedirs(output_dir, exist_ok=True)
@@ -30,14 +23,14 @@ def MSEN(GT, pred, output_dir, verbose=False, visualize=True):
         img_plot.set_cmap("Blues")
         plt.title(f"Mean Square Error in Non-Occluded Areas")
         plt.colorbar()
-        os.makedirs("./results", exist_ok=True)
+        os.makedirs(output_dir, exist_ok=True)
         plt.savefig(os.path.join(output_dir, "OF_MSEN.png"))
         plt.clf()
 
         pred, _ = cv2.cartToPolar(pred[:, :, 0], pred[:, :, 1])
         plt.figure(figsize=(11, 4))
         img_plot = plt.imshow(pred)
-        plt.clim(0,4)
+        # plt.clim(0,200)
         img_plot.set_cmap("YlOrRd")
         plt.title(f"Optical Flow Prediction")
         plt.colorbar()
