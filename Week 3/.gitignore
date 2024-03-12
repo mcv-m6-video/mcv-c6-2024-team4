@@ -3,3 +3,4 @@ kitti_data/*
 data/*
 *.pt
 *.mp4
+results_*/
