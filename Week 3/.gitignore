@@ -1,2 +1,10 @@
 kitti_data/*
 *.zip
+data/*
+*.pt
+*.pth
+*.png
+*.mp4
+results_*/
+TrackEval
+tracking/

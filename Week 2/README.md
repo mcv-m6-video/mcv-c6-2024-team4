@@ -2,21 +2,22 @@
 
 ## Folder structure 
 The code and data is structured as follows:
-   .                       
-   ├── data
-   ├── TrackEval
-   ├── results
-   ├── data_utils.py
-   ├── eval_utils.py
-   ├── sort.py
-   ├── run_experiments.py
-   ├── detection_inference.ipynb
-   ├── kalman_tracking.ipynb
-   ├── tracking_yolo.ipynb
-   ├── README.md
-   ├── S04_C016_Annotations_CVAT.zip
-   ├── S04_C016_Annotations_PASCALVOC.zip
-   ├── dataset.yaml
+   
+   . <br>             
+   ├── data <br>
+   ├── TrackEval<br>
+   ├── results<br>
+   ├── data_utils.py<br>
+   ├── eval_utils.py<br>
+   ├── sort.py<br>
+   ├── run_experiments.py<br>
+   ├── detection_inference.ipynb<br>
+   ├── kalman_tracking.ipynb<br>
+   ├── tracking_yolo.ipynb<br>
+   ├── README.md<br>
+   ├── S04_C016_Annotations_CVAT.zip<br>
+   ├── S04_C016_Annotations_PASCALVOC.zip<br>
+   ├── dataset.yaml<br>
 
 In this structure:
 
