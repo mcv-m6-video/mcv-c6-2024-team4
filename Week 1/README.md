@@ -4,6 +4,7 @@
 The code and data is structured as follows:
 
    .
+   
    ├── code.ipynb       
    ├── code_color.ipynb                   
    ├── code_gmm.ipynb       
