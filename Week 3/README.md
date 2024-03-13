@@ -1,4 +1,4 @@
-# Week 2: Object Detection and Tracking
+# Week 3: Object Detection and Tracking
 
 ## Folder structure 
 The code and data is structured as follows:
