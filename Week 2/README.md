@@ -3,8 +3,8 @@
 ## Folder structure 
 The code and data is structured as follows:
    
-   .                 
-   ├── data
+   . <br>             
+   ├── data <br>
    ├── TrackEval
    ├── results
    ├── data_utils.py
