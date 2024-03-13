@@ -2,16 +2,16 @@
 
 ## Folder structure 
 The code and data is structured as follows:
-   .                       
-   ├── data
-   ├── core
-   ├── pyflow
-   ├── evaluation.py
-   ├── README.md
-   ├── task1_1.ipynb
-   ├── task1_2.ipynb
-   ├── task1_3.ipynb
-   ├── utils.py
+   . <br>                      
+   ├── data<br>
+   ├── core<br>
+   ├── pyflow<br>
+   ├── evaluation.py<br>
+   ├── README.md<br>
+   ├── task1_1.ipynb<br>
+   ├── task1_2.ipynb<br>
+   ├── task1_3.ipynb<br>
+   ├── utils.py<br>
 
 In this structure:
 
