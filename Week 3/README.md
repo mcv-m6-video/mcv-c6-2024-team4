@@ -6,6 +6,7 @@ The code and data is structured as follows:<br>
    ├── data<br>
    ├── core<br>
    ├── pyflow<br>
+   ├── deep_sort<br>
    ├── evaluation.py<br>
    ├── README.md<br>
    ├── task1_1.ipynb<br>
@@ -18,11 +19,12 @@ In this structure:
 * `data`: Folder containing S03_C010 video data for the project and its gt annotations.
 * `core`: Repository of RAFT.
 * `pyflow`: Repository of pyflow.
+* `deep_sort`: Repository of deepsort. It includes `run_experiments_deepsort.ipynb`, the notebook dedicated to implementing the tracking with DeepSORT algorithm.
 * `utils.py`: Python script with utilities for data handling and processing.
 * `evaluation.py`: Python script containing utilities for object detecion evaluation metrics.
-* `tas1_1.ipynb`: Notebook dedicated to implementing Block Matching algorithm.
-* `tas1_2.ipynb`: Notebook dedicated to implementing Off-the-shelf Optical Flow algorithms.
-* `tas1_3.ipynb`: Notebook dedicated to implementing tracking by adding Optical Flow.
+* `task1_1.ipynb`: Notebook dedicated to implementing Block Matching algorithm.
+* `task1_2.ipynb`: Notebook dedicated to implementing Off-the-shelf Optical Flow algorithms.
+* `task1_3.ipynb`: Notebook dedicated to implementing tracking by adding Optical Flow.
 
 ## Running the code
 Since the code is in _.ipynb_ format, it is required to have _Jupyter Notebook_ or any other program/text editor that can run this kind of file. We recommend using Visual Studio Code with the _Jupyter_ extension.
