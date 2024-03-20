@@ -1,2 +1,3 @@
 aic19-track1-mtmc-train/
 *.pt
+*.pth
