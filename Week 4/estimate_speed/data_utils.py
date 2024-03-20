@@ -1,5 +1,6 @@
 import xml.etree.ElementTree as elemTree
 from typing import Dict
+import os
 
 # Code for parsing the XML annotation files from Team1-2023
 def sort_dict(dictionary: Dict):
@@ -12,7 +13,7 @@ def sort_dict(dictionary: Dict):
     frames_int = sorted(int(frame[2:]) for frame in frames_num_str)
     return {i: dictionary["f_" + str(i)] for i in frames_int}
 
-def extract_rectangles_from_xml(path_to_xml_file, add_track_id=False, removed_parked=False):
+def parse_pascalvoc_annotations(path_to_xml_file, add_track_id=False, removed_parked=False):
     """
     Parses an XML annotation file in the Pascal VOC format and extracts bounding box coordinates for cars in each frame.
     Args:
@@ -58,3 +59,32 @@ def extract_rectangles_from_xml(path_to_xml_file, add_track_id=False, removed_pa
                     frame_dict[frame_num].append([x1, y1, x2, y2])
 
     return sort_dict(frame_dict)
+
+
+def parse_cvat_annotations(cvat_file):
+    tree = elemTree.parse(cvat_file)
+    root = tree.getroot()
+
+    annotations = {}
+
+    for track in root.findall('./track'):
+        track_id = int(track.attrib['id'])
+        
+        for bbox in track.findall('./box'):
+            frame = int(bbox.attrib['frame'])
+            xtl = float(bbox.attrib['xtl'])
+            ytl = float(bbox.attrib['ytl'])
+            xbr = float(bbox.attrib['xbr'])
+            ybr = float(bbox.attrib['ybr'])
+            box = [xtl, ytl, xbr, ybr]
+            
+            if frame not in annotations:
+                annotations[frame] = []
+            annotations[frame].append([xtl, ytl, xbr, ybr, track_id])
+
+    return annotations
+
+
+
+
+
