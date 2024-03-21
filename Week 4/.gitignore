@@ -3,3 +3,4 @@ aic19-track1-mtmc-train/
 *.pth
 *.pkl
 mcv-m6-2023-team2/
+TrackEval/
