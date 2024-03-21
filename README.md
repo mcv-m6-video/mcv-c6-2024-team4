@@ -20,6 +20,9 @@ This repository serves as the collaborative workspace for Team 4 working on the 
 
 3. **Run the code**:
    - Follow the instructions in the weekly README to execute the code and reproduce the results.
+  
+## Final Presentation
+You can find our final presentation slides [here](https://docs.google.com/presentation/d/1rEIsPU42naHrBJiSwFap-aUceOrwwB38SBjugZcx3mo/edit?usp=sharing).
 
 ## Contact
 
