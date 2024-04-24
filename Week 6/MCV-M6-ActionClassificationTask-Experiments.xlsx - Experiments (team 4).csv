@@ -1,0 +1,12 @@
+Models;Parameters (M);GFLOPs;Test accuracy (%)
+X3D-XS (baseline);0.31;0.09;16.02
+X3D-XS-2x3;0.31;0.09;16.68
+X3D-XS-pretrained;0.31;0.09;57.61
+X3D-XS-2x3-pretrained;0.31;0.09;54.32
+X3D-XXS;0.11;0.06;16.61
+MVIT.V2-XS;0.31;0.42;10.50
+X3D-M-pretrained;0.31;0.51;67.37
+X3D-L-pretrained;0.54;1.98;63.22
+MVIT.V2-S-pretrained;3.43;6.45;65.79
+MVIT.V1-B-pretrained;3.63;7.08;62.43
+Slow-r50-pretrained;3.17;5.51;50.23
