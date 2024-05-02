@@ -22,7 +22,7 @@ This repository serves as the collaborative workspace for Team 4 working on the 
    - Follow the instructions in the weekly README to execute the code and reproduce the results.
   
 ## Final Presentation
-You can find our final presentation slides [here](https://docs.google.com/presentation/d/1rEIsPU42naHrBJiSwFap-aUceOrwwB38SBjugZcx3mo/edit?usp=sharing).
+You can find our final presentation slides here: [Part 1](https://docs.google.com/presentation/d/1rEIsPU42naHrBJiSwFap-aUceOrwwB38SBjugZcx3mo/edit?usp=sharing) & [Part 2](https://docs.google.com/presentation/d/11fmggiclEn0QrzsUSuC1aN7yEF33mmIiGJ01Q7iXP7Y/edit?usp=sharing)
 
 ## Contact
 
